@@ -19,7 +19,7 @@ public abstract class Ship {
         this.state = state;
     }
 
-    public Object getCountOfDecks() {
+    public Integer getCountOfDecks() {
         return countOfDecks;
     }
 }

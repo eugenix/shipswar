@@ -64,9 +64,9 @@ public class Game {
             add(new DoubleDeckShip());
         }};
 
-        LocationGenerator.init(MAX_AREA_SIZE, MAX_AREA_SIZE);
+        //battlefield.setAllocationStrategy(new AllocationRandomStrategy());
         for (Ship ship: shipSet) {
-            battlefield.allocateShip(ship, LocationGenerator.generate(ship.getCountOfDecks()));
+            battlefield.allocateShipRandomly(ship);
         }
     }
 }
